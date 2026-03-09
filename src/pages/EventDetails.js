@@ -10,16 +10,41 @@ function EventDetails() {
   );
 
   return (
-    <div>
 
-      <h2>{event.title}</h2>
-      <p>Location: {event.location}</p>
+    <div className="event-details">
 
-      <Link to={`/book/${event.id}`}>
-        Book Ticket
-      </Link>
+      <img
+        src={event.image}
+        alt={event.title}
+        className="event-banner"
+      />
+
+      <div className="event-info-box">
+
+        <h1>{event.title}</h1>
+
+        <p><strong>Location:</strong> {event.location}</p>
+
+        <p><strong>Date:</strong> {event.date}</p>
+
+        <p>
+          Experience an unforgettable night of live music
+          and entertainment. Book your tickets now
+          before they sell out.
+        </p>
+
+        <Link to={`/event/${event.id}/book`}>
+
+          <button className="book-now-btn">
+            Book Ticket
+          </button>
+
+        </Link>
+
+      </div>
 
     </div>
+
   );
 }
 

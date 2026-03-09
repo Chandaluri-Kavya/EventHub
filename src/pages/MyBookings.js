@@ -4,14 +4,14 @@ function MyBookings(){
 
 const [bookings,setBookings]=useState([])
 
-useEffect(()=>{
+useEffect(() => {
 
-const stored=
-JSON.parse(localStorage.getItem("bookings"))||[]
+  const savedBookings =
+    JSON.parse(localStorage.getItem("bookings")) || [];
 
-setBookings(stored)
+  setBookings(savedBookings);
 
-},[])
+}, [])
 
 return(
 

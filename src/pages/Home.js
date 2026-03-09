@@ -21,12 +21,7 @@ return(
 
 <h2>Featured Concerts</h2>
 
-<input
-type="text"
-placeholder="Search concerts..."
-className="search"
-onChange={(e)=>setSearch(e.target.value)}
-/>
+
 
 <div className="event-grid">
 

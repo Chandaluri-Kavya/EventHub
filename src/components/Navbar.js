@@ -1,24 +1,20 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
-function Navbar(){
+function Navbar() {
+  return (
+    <nav className="navbar">
 
-return(
+      <div className="logo">
+        EventHub
+      </div>
 
-<nav className="navbar">
+      <div className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/bookings">My Bookings</Link>
+      </div>
 
-<h2>EventHub</h2>
-
-<div>
-
-<Link to="/">Home</Link>
-<Link to="/bookings">My Bookings</Link>
-
-</div>
-
-</nav>
-
-)
-
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
