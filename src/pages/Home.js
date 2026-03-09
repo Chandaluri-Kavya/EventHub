@@ -5,7 +5,7 @@ import EventCard from "../components/EventCard"
 
 function Home(){
 
-const [search,setSearch]=useState("")
+const [search] = useState("");
 
 const filteredEvents=events.filter(event=>
 event.title.toLowerCase().includes(search.toLowerCase())
